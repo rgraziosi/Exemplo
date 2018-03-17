@@ -19,108 +19,111 @@
 <link rel="stylesheet" href="css/footer.css">
 </head>
 
-<body id="o-app">
+<body>
+<div id="vue">
+	<header>
+		<div class="o-center c-header">
 
-<header>
-	<div class="o-center c-header">
-	
-		<div class="o-left">
-		
-			<div class="o-logo">
-				<img src="imagens/logo.png" alt="UX" title="UX"/>
-			</div>
-			
-			<nav class="o-bars">
-				<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-			</nav>
-			
-			<div class="o-searchbar">
-				<button type="submit"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
-				<input type="text" name="searchbar"/>
-			</div>
-		<!-- o-left -->	
-		</div>
-		
-		<div class="o-right">
-		
-			<div class="o-addPost">
-				<i class="fa fa-plus" aria-hidden="true"></i>
-				<div class="o-info">					
-					Add Post
-				</div>
-			</div>
-			
-			<div class="o-photoUser">
-				<span class="o-bandage">5</span>
-				<img src="imagens/Rafael Graziosi.png" alt="foto usuario" title="foto do usuario">
-			</div>
-			
-		<!-- o-right -->
-		</div>
-	<!-- c-header -->	
-	</div>
-</header>
-
-
-<section class="c-posts">
-	<div class="o-center">	
-	
-		<article class="o-post">
-			
 			<div class="o-left">
-				<div class="o-up-votes">
-					<div class="o-vote"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
-					<div class="o-value">9</div>
-				</div>
-			<!-- o-left -->
-			</div>
-			
-			<div class="o-right">
-				
-				<div class="o-dados">
-						
-					<div class="o-url">
-						css-tricks.com
-					</div>
-					<div class="o-title">
-						Font Size Idea: px at Root, rem for Components, em for Text Elements
-					</div>
 
-					<div class="o-info">
-						<div class="o-category">
-							<div class="o-text">								
-								ux_ui
-							</div>							
-						</div>
-						<div class="o-author">
-							<div class="o-photo">
-								<img src="imagens/Danil Ishutin.png">
-							</div>
-							<a href="#">								
-								Danil Ishutin
-							</a>
-						<!-- o-author -->
-						</div>
-						<div class="o-time">43 minutes ago</div>
-						<span class="o-separator"><i class="fa fa-circle" aria-hidden="true"></i></span>
-						<div class="o-comments">
-							<a href="#"><i class="fa fa-comment" aria-hidden="true"></i>4 comments</a>
-						</div>
-					</div>
-				<!-- o-dados -->	
+				<div class="o-logo">
+					<img src="imagens/logo.png" alt="UX" title="UX"/>
 				</div>
-			<!-- o-right -->	
-			</div>			
-			
-		</article>
-		
-		<div class="o-loadMore">
-			<div class="o-text"><i class="fa fa-refresh" aria-hidden="true"></i> Load more</div>
+
+				<nav class="o-bars">
+					<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+				</nav>
+
+				<div class="o-searchbar">
+					<button type="submit"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+					<input type="text" name="searchbar"/>
+				</div>
+			<!-- o-left -->	
+			</div>
+
+			<div class="o-right">
+
+				<div class="o-addPost">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+					<div class="o-info">					
+						Add Post
+					</div>
+				</div>
+
+				<div class="o-photoUser">
+					<span class="o-bandage">5</span>
+					<img src="imagens/Rafael Graziosi.png" alt="foto usuario" title="foto do usuario">
+				</div>
+
+			<!-- o-right -->
+			</div>
+		<!-- c-header -->	
 		</div>
-		
-	<!-- o-center -->
-	</div>	
-</section>
+	</header>
+
+
+	<section class="c-posts">
+		<div class="o-center">	
+
+			<article class="o-post">
+
+				<div class="o-left">
+					<div class="o-up-votes">
+						<div class="o-vote"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+						<div class="o-value">9</div>
+					</div>
+				<!-- o-left -->
+				</div>
+
+				<div class="o-right">
+
+					<div class="o-dados">
+
+						<div class="o-url">
+							css-tricks.com
+						</div>
+						<div class="o-title">
+							Font Size Idea: px at Root, rem for Components, em for Text Elements
+						</div>
+
+						<div class="o-info">
+							<div class="o-category">
+								<div class="o-text">								
+									ux_ui
+								</div>							
+							</div>
+							<div class="o-author">
+								<div class="o-photo">
+									<img src="imagens/Danil Ishutin.png">
+								</div>
+								<a href="#">								
+									Danil Ishutin
+								</a>
+							<!-- o-author -->
+							</div>
+							<div class="o-time">43 minutes ago</div>
+							<span class="o-separator"><i class="fa fa-circle" aria-hidden="true"></i></span>
+							<div class="o-comments">
+								<a href="#"><i class="fa fa-comment" aria-hidden="true"></i>4 comments</a>
+							</div>
+						</div>
+					<!-- o-dados -->	
+					</div>
+				<!-- o-right -->	
+				</div>			
+
+			</article>
+
+			<div class="o-loadMore">
+				<div class="o-text"><i class="fa fa-refresh" aria-hidden="true"></i> Load more</div>
+			</div>
+
+
+		<!-- o-center -->
+		</div>	
+	</section>
+<!-- #vue -->
+</div>
 
 <footer>
 	<div class="o-center c-footer">
@@ -154,7 +157,6 @@
 </footer>
 
 </body>
-
 <script src="js/vue.min.js" type="text/javascript"></script>
 <script src="js/all.js" type="text/javascript"></script>
 </html>
