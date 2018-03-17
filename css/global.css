@@ -24,3 +24,11 @@ body {
 .o-flex {
   display: flex;
 }
+a {
+  color: #e3472f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+a:hover {
+  color: #a43322;
+}
