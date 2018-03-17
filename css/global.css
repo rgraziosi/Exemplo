@@ -21,3 +21,6 @@ body {
   height: inherit;
   max-width: 1170px;
 }
+.o-flex {
+  display: flex;
+}
