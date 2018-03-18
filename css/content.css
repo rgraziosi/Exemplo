@@ -19,6 +19,7 @@
 }
 .o-up-votes .o-vote {
   color: #e3472f;
+  text-align: center;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -51,7 +52,7 @@
   display: flex;
   align-items: center;
 }
-.o-category .o-text {
+.o-category > * {
   background-color: #000;
   border-radius: 30px;
   color: #FFF;
@@ -59,16 +60,16 @@
   line-height: 1rem;
   margin-right: 1rem;
 }
-.o-category .o-text.is-productDesing {
+.o-category > *.product_design {
   background-color: #00e2ad;
 }
-.o-category .o-text.is-caseStudy {
+.o-category > *.case_study {
   background-color: #f4973c;
 }
-.o-category .o-text.is-discussion {
+.o-category > *.discussion {
   background-color: #4271d6;
 }
-.o-category .o-text.is-ux {
+.o-category > *.ux_ui {
   background-color: #00bbff;
 }
 .o-author {

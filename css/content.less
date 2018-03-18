@@ -21,6 +21,7 @@
 	}
 	.o-vote {
 		color: #e3472f;
+		text-align: center;
 		border-top-left-radius: 2px;
 		border-top-right-radius: 2px;		
 	}
@@ -55,23 +56,23 @@
 .o-category {
 	display: flex;
 	align-items: center;
-	.o-text{		
+	> * {		
 		background-color: #000;
 		border-radius: 30px;
 		color: #FFF;
 		padding: 0.4rem 1rem;
 		line-height: 1rem;
 		margin-right: 1rem;
-		&.is-productDesing {
+		&.product_design {
 			background-color: #00e2ad;
 		}
-		&.is-caseStudy {
+		&.case_study {
 			background-color: #f4973c;
 		}
-		&.is-discussion {
+		&.discussion {
 			background-color: #4271d6;
 		}
-		&.is-ux {
+		&.ux_ui {
 			background-color: #00bbff;
 		}
 	}
