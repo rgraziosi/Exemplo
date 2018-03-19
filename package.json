@@ -1,0 +1,36 @@
+{
+  "name": "leroymerlin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgraziosi/leroymerlin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rgraziosi/leroymerlin/issues"
+  },
+  "homepage": "https://github.com/rgraziosi/leroymerlin#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-csslint": "^1.0.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-html-replace": "^1.5.4",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-uglify": "^1.4.1",
+    "gulp-usemin": "^0.3.29",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1"
+  }
+}

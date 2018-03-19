@@ -1,0 +1,107 @@
+/* CSS Document */
+header {
+  height: 40px;
+  padding: 2rem 0;
+  border: 1px solid #f0f0f0;
+}
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.c-header > * {
+  display: flex;
+  align-items: center;
+}
+.c-header .o-left {
+  justify-content: flex-start;
+  flex-grow: 2;
+}
+.c-header .o-right {
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+.o-logo {
+  padding-right: 1rem;
+  border-right: 1px solid #efefef;
+  display: flex;
+  align-items: center;
+}
+.o-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.o-bars {
+  margin: 0 1rem;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  line-height: 1rem;
+  border-radius: 2px;
+}
+.o-searchbar {
+  display: flex;
+  flex-grow: 2;
+}
+.o-searchbar > * {
+  background: #f0f0f0;
+  border: none;
+  padding: 0.725rem;
+}
+.o-searchbar button {
+  color: #d1d1d1;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.o-searchbar input {
+  color: #000;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  flex: 0 0 35%;
+}
+.o-addPost {
+  display: flex;
+}
+.o-addPost > * {
+  background: #e3472f;
+  line-height: 1rem;
+  padding: 0.725rem 0.875rem;
+  color: #FFF;
+  align-items: center;
+}
+.o-addPost i {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-right: 1px solid #d63820;
+}
+.o-addPost .o-info {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  font-weight: bold;
+  font-size: 0.925rem;
+  padding: 0.725rem 1rem;
+}
+.o-photoUser {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  padding-left: 1rem;
+}
+.o-photoUser img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.o-photoUser .o-bandage {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  background: #e3472f;
+  line-height: 1rem;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 0.825rem;
+  padding: 0.1rem 0.4rem;
+}

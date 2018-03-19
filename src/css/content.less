@@ -1,0 +1,125 @@
+/* CSS Document */
+
+.c-posts {
+	padding: 4rem 0 0;
+}
+
+.o-post{
+	display: flex;
+	align-items: center;
+	padding-bottom: 3rem;
+}
+
+.o-up-votes{
+	display: flex;
+	flex-direction: column;
+	padding-right: 1.750rem;
+	> *{
+		border:1px solid #e6e6e6;
+		padding:.7rem 0.9rem;
+		line-height: 1rem;		
+	}
+	.o-vote {
+		color: #e3472f;
+		text-align: center;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;		
+	}
+	.o-value {
+		font-size: 1.5rem;
+		font-weight: bold;
+		text-align: center;
+		border-bottom-left-radius: 2px;
+		border-bottom-right-radius: 2px;		
+	}
+}
+
+.o-dados {
+	display: flex;
+	flex-direction: column;
+	.o-url{
+		color: #cbcbcb;
+		font-size: 0.725rem;
+		font-weight: bold;
+		line-height: 1rem;
+		text-transform: uppercase;
+	}
+	.o-title {
+		font-size: 1.5rem;
+		padding-bottom: 0.5rem;
+	}
+	.o-info {
+		display: inline-flex;
+	}
+}
+
+.o-category {
+	display: flex;
+	align-items: center;
+	> * {		
+		background-color: #000;
+		border-radius: 30px;
+		color: #FFF;
+		padding: 0.4rem 1rem;
+		line-height: 1rem;
+		margin-right: 1rem;
+		&.product_design {
+			background-color: #00e2ad;
+		}
+		&.case_study {
+			background-color: #f4973c;
+		}
+		&.discussion {
+			background-color: #4271d6;
+		}
+		&.ux_ui {
+			background-color: #00bbff;
+		}
+	}
+}
+
+.o-author {
+	display: inline-flex;
+	padding:0 1rem;
+	border-left: 1px solid #c7c7c7;
+	align-items: center;
+	line-height: 1rem;
+	.o-photo{
+		width: 20px;
+		height: 20px;
+		padding-right: 0.5rem;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 2px;
+		}
+	}
+}
+.o-time {
+	color: #ababab;
+}
+.o-separator{
+	padding: 0 1rem;
+	font-size: 0.3rem;
+	color: #ababab;
+}
+.o-comments{
+	i{
+		padding-right: 0.5rem;
+	}
+}
+
+.o-loadMore {
+	display: flex;
+	background-color: #f4f4f1;
+	padding: 2rem 0;
+	justify-content: center;
+	border-radius:2px;
+	.o-text{
+		color: #e3472f;
+		font-size: 1.5rem;
+		line-height: 1rem;
+	}
+	
+}

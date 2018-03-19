@@ -1,0 +1,69 @@
+/* CSS Document */
+.c-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.c-footer .o-left {
+  align-items: center;
+  display: inline-flex;
+}
+.c-footer .o-left > * {
+  line-height: 1rem;
+  color: #6e6e6e;
+}
+.c-footer .o-left .o-photo {
+  padding-right: 0.5rem;
+}
+.c-footer .o-left .o-info .is-strong {
+  font-weight: bold;
+  display: block;
+  color: #000;
+  padding-bottom: 0.1rem;
+}
+.c-footer .o-right {
+  display: flex;
+  flex-direction: column;
+}
+.o-smm {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.o-smm .o-iconText {
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 0.8rem;
+}
+.o-smm .o-iconText:last-of-type {
+  padding-right: 0rem;
+}
+.o-smm .o-iconText img {
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  padding-right: 0.4rem;
+}
+.o-smm .o-menu {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+}
+.o-smm .o-menu li {
+  list-style: none;
+  padding: 0 .3rem;
+}
+.o-smm .o-menu li a {
+  text-decoration: none;
+}
+.o-copyright {
+  display: flex;
+  justify-content: flex-end;
+  color: #bbbbbb;
+  font-size: 0.725rem;
+  line-height: 1rem;
+}

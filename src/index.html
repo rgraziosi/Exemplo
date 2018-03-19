@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta name="format-detection" content="telephone=no" />
+<meta name="Author" content="Rafael Graziosi" />
+<meta name="Language" content="Portuguese" />
+<meta http-equiv="content-language" content="pt-br" />
+<meta name="Robots" content="ALL" />
+<meta name="Revisit" content="1 days" />
+<meta http-equiv="Pragma" content="no-cache" />
+
+<title>Leroy Merlin</title>
+<link rel="stylesheet" href="libary/font-awesome/css/font-awesome.min.css">
+
+<!-- build:css -->
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/content.css">
+<link rel="stylesheet" href="css/footer.css">
+<!-- endbuild-->
+
+</head>
+
+<body>
+<div id="vue">
+	<header>
+		<div class="o-center c-header">
+
+			<div class="o-left">
+
+				<div class="o-logo">
+					<img src="imagens/logo.png" alt="UX" title="UX"/>
+				</div>
+
+				<nav class="o-bars">
+					<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+				</nav>
+
+				<div class="o-searchbar">
+					<button type="submit"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+					<input type="text" @input="filtro = $event.target.value" name="searchbar"/>
+				</div>
+			<!-- o-left -->	
+			</div>
+
+			<div class="o-right">
+
+				<div class="o-addPost">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+					<div class="o-info">					
+						Add Post
+					</div>
+				</div>
+
+				<div class="o-photoUser">
+					<span class="o-bandage">5</span>
+					<img src="imagens/Rafael Graziosi.png" alt="foto usuario" title="foto do usuario">
+				</div>
+
+			<!-- o-right -->
+			</div>
+		<!-- c-header -->	
+		</div>
+	</header>
+
+
+	<section class="c-posts">
+		<div class="o-center">
+			
+			<article v-for="post of filtrePosts" class="o-post">
+
+				<div class="o-left">
+					<div class="o-up-votes">
+						<div class="o-vote"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+						<div class="o-value">{{ post.upvotes }}</div>
+					</div>
+				<!-- o-left -->
+				</div>
+
+				<div class="o-right">
+
+					<div class="o-dados">
+
+						<div class="o-url">
+							{{ post.meta.url }}
+						</div>
+						<div class="o-title">
+							{{ post.meta.title }}
+						</div>
+
+						<div class="o-info">
+							<div class="o-category">
+								<div :class="post.category">								
+									{{ getCategory(post) }}
+								</div>							
+							</div>
+							<div class="o-author">
+								<div class="o-photo">
+									<img :src="getImageAuthor(post.meta.author)">
+								</div>
+								<a href="#">								
+									{{ post.meta.author }}
+								</a>
+							<!-- o-author -->
+							</div>
+							<div class="o-time">{{ getTimeAgo(post.created_at) }}</div>
+							<span class="o-separator"><i class="fa fa-circle" aria-hidden="true"></i></span>
+							<div class="o-comments">
+								<a href="#"><i class="fa fa-comment" aria-hidden="true"></i>{{ post.comments }} comments</a>
+							</div>
+						</div>
+					<!-- o-dados -->	
+					</div>
+				<!-- o-right -->	
+				</div>			
+
+			</article>
+
+			<div class="o-loadMore">
+				<div class="o-text"><i class="fa fa-refresh" aria-hidden="true"></i> Load more</div>
+			</div>
+
+
+		<!-- o-center -->
+		</div>	
+	</section>
+<!-- #vue -->
+</div>
+
+<footer>
+	<div class="o-center c-footer">
+	
+		<div class="o-left">
+			<div class="o-photo"><img src="imagens/logo.png" alt="UX" title="UX"/></div>
+			<div class="o-info"><span class="is-strong">The UX Library</span>Community curated  desing content &amp; discussion</div>
+		</div>
+		
+		<div class="o-right">
+			<div class="o-smm">
+				<a href="#" class="o-iconText">
+					<img src="imagens/facebook.png" alt="facebook" title="facebook">
+					Facebook
+				</a>
+				<a href="#" class="o-iconText">
+					<img src="imagens/twitter.png" alt="twitter" title="twitter">
+					Twitter
+				</a>				
+				<span class="o-separator"><i class="fa fa-circle" aria-hidden="true"></i></span>
+				<ul class="o-menu">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Sing in</a></li>
+				</ul>
+			</div>
+			<div class="o-copyright">&copy; 2014 - The UX Library</div>
+		</div>
+		
+	</div>	
+</footer>
+
+</body>
+<!-- build:js -->
+<script src="js/vue.min.js" type="text/javascript"></script>
+<script src="js/vue-resource.min.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+<!-- endbuild-->
+
+</html>
