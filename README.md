@@ -1,5 +1,5 @@
-# Leroy Merlin
-processo seletivo para vaga Desenvolvedor Front-End
+# Exemplo de Skill's 
+Desenvolvimento de tela com Vue.js, gulp, css3, html5
 
 ## Gulp
 
