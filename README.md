@@ -1,4 +1,4 @@
-# Exemplo de Skill's 
+# Exemplo
 Desenvolvimento de tela com Vue.js, gulp, css3, html5
 
 ## Gulp
